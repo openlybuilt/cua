@@ -74,7 +74,7 @@ function ComputerUseLanding() {
       </section>
       <section className="computer-section" aria-labelledby="computer-nocode-title">
         <div className="computer-section-inner">
-          <div className="computer-section-copy"><h2 id="computer-nocode-title">Build visually, without code.</h2><p>Download and run the frontend to create and manage workflows through a visual, no-code interface.</p></div>
+          <div className="computer-section-copy"><h2 id="computer-nocode-title">Build visually, without code.</h2><p>Download and run the frontend to create and manage workflows through a visual, no-code interface.</p><a className="computer-workspace-link" href="https://github.com/openlybuilt/cua" target="_blank" rel="noopener noreferrer"><RiGithubFill size={19} aria-hidden="true"/>GitHub repository <span className="design-sr">(opens in a new tab)</span></a></div>
           <div className="computer-workflow-example" aria-label="Browser workflow demo">
             <span className="computer-builder-end">Start</span>
             <ol className="computer-workflow-steps">{seleniumSteps.map(step => <li key={step.title}><span className="computer-builder-line" aria-hidden="true"/><div className="computer-builder-node"><i aria-hidden="true">{step.icon}</i><span><b>{step.title}</b><small>{step.detail}</small></span></div></li>)}</ol>

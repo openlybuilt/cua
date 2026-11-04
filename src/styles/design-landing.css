@@ -1,5 +1,5 @@
 *{box-sizing:border-box}body{margin:0;background:#080808;color:#f7f6f2;font:300 16px/1.65 Manrope,system-ui,sans-serif}
-.design-header{position:absolute;top:0;left:0;right:0;z-index:5}.design-header nav{position:relative;width:calc(100% - 48px);margin:auto;height:80px;display:flex;align-items:center;justify-content:center;gap:28px}.design-header .design-logo{position:absolute;left:0;top:50%;transform:translateY(-50%);line-height:0}.design-logo img{display:block;width:44px;height:44px}
+.design-header{position:absolute;top:0;left:0;right:0;z-index:5}.design-header nav{position:relative;width:calc(100% - 48px);margin:auto;height:80px;display:flex;align-items:center;justify-content:center;gap:28px}.design-header .design-logo{position:absolute;left:0;top:50%;transform:translateY(-50%);font-size:17px;line-height:1.2}
 .design-links{display:flex;align-items:center;gap:28px}.design-socials{position:absolute;right:0;top:50%;transform:translateY(-50%)}
 .design-header .design-links a[aria-current="page"]{padding:8px 12px;border-radius:6px;background:rgba(255,255,255,.16);color:#fff}.design-header .design-links a[aria-current="page"]:hover{text-decoration:none;background:rgba(255,255,255,.22)}
 .design-agents-trigger>svg{display:none}
@@ -14,7 +14,7 @@
 .scene-examples{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:48px 24px;align-items:center}.scene-example{min-width:0;min-height:110px;display:flex;align-items:center;justify-content:center}.scene-example>div{max-width:100%}.scene-gauge,.scene-donut{position:relative;width:90px;height:92px}.scene-gauge>figure,.scene-donut>figure{position:absolute;top:50%;left:50%;width:140px;transform:translate(-50%,-50%) scale(.62);transform-origin:center}
 @media(min-width:701px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.scene-examples{opacity:0}.scene-art::after{content:"Move your cursor to explore";position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);color:#b8beb8;font-size:13px;font-weight:600;white-space:nowrap;pointer-events:none;transition:opacity 200ms ease}.scene-art[data-cursor-moving]::after{opacity:0}}
 @media(max-width:700px){.design-header nav{gap:15px}.design-showcase{padding:80px 24px}.design-trail-layer{display:none}.scene-copy{margin-bottom:45px}.scene-examples{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 16px}}
-@media(max-width:480px){.design-header nav{display:grid;grid-template-columns:38px minmax(0,1fr) 70px;gap:0;padding:0}.design-header .design-logo,.design-socials{position:static;transform:none}.design-header .design-logo img{width:38px;height:38px}.design-links{justify-content:center;gap:7px}}
+@media(max-width:480px){.design-header nav{display:grid;grid-template-columns:64px minmax(0,1fr) 70px;gap:0;padding:0}.design-header .design-logo,.design-socials{position:static;transform:none}.design-links{justify-content:center;gap:7px}}
 @media(prefers-reduced-motion:reduce){.design-intro{display:none}}
 .design-showcase{color:#f7f6f2;--foreground:#f7f6f2;--text-secondary:#c5c4bf;--text-muted:#a9aaa4;--border:#525b54;--surface:#1b211d;--surface-muted:#242c26}
 .design-showcase .scene-copy p{color:#c5c4bf}
@@ -53,3 +53,5 @@
 .computer-builder-preview-label{color:#c6c6c6;font-size:10px}
 .computer-workflow-example{display:flex;flex-direction:column;align-items:center;width:min(380px,100%);margin:auto;color:#f5f5f5}.computer-workflow-steps{display:flex;flex-direction:column;align-items:stretch;width:100%;padding:0;margin:0;list-style:none}.computer-workflow-steps li{display:flex;flex-direction:column;align-items:center}.computer-workflow-example .computer-builder-line{height:24px;flex:none}.computer-workflow-example .computer-builder-node{padding:14px 16px}.computer-workflow-example .computer-builder-node i{width:30px;height:30px;font-size:16px}.computer-workflow-example .computer-builder-node b{font-size:13px}.computer-workflow-example .computer-builder-node small{font-size:11px}
 @media(max-width:700px){.computer-section{min-height:auto;padding:64px 24px}.computer-section-inner{grid-template-columns:minmax(0,1fr);gap:48px}.computer-section-reverse .computer-section-copy{order:0}.computer-section-copy{text-align:center}.computer-section-copy h2,.computer-section-copy p{margin-left:auto;margin-right:auto}}
+
+.design-header .design-logo{font-size:17px;line-height:1.2}

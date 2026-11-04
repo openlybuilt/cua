@@ -36,7 +36,7 @@ function ComputerUseLanding() {
   return <>
     <div className="computer-pixel-background" aria-hidden="true"><PixelCard alwaysActive backgroundColor="#080808" borderWidth={0} radius={0} gap={14} pixelSize={2} style={{ width: '100%', height: '100%' }}/></div>
     <header className="design-header computer-header"><nav aria-label="Main navigation">
-      <a className="design-logo" href={sitePaths.home} aria-label="Openly home"><img src="/assets/o-ring-white-transparent.svg" alt=""/></a>
+      <a className="design-logo" href={sitePaths.home} aria-label="Openly home">Openly</a>
       <div className="design-links">
         <DropdownMenu openOnHover current label="Agents" align="center" triggerClassName="design-agents-trigger computer-agents-current" menuClassName="design-agents-menu" items={[
           { label: 'Computer-use', current: true, onSelect: () => { window.location.href = sitePaths.computerUse; } },

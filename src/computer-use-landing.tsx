@@ -32,7 +32,6 @@ const seleniumSteps = [
 ];
 
 function ComputerUseLanding() {
-  const local = ['localhost', '127.0.0.1', '[::1]'].includes(window.location.hostname);
   return <>
     <div className="computer-pixel-background" aria-hidden="true"><PixelCard alwaysActive backgroundColor="#080808" borderWidth={0} radius={0} gap={14} pixelSize={2} style={{ width: '100%', height: '100%' }}/></div>
     <header className="design-header computer-header"><nav aria-label="Main navigation">
@@ -53,7 +52,6 @@ function ComputerUseLanding() {
       <p>Build workflows that help agents carry out tasks on a computer.<br/>Open source and available for anyone to use.</p>
       <div className="computer-actions">
         <a className="computer-workspace-link" href="https://github.com/openlybuilt/cua" target="_blank" rel="noopener noreferrer"><RiGithubFill size={19} aria-hidden="true"/>GitHub repository <span className="design-sr">(opens in a new tab)</span></a>
-        <a className="computer-workspace-link" href={local ? 'http://127.0.0.1:3000/' : 'https://platform.cua.openlybuilt.com'}>No-code web app <span aria-hidden="true">↗</span></a>
       </div>
     </div></section>
       <section className="computer-section" aria-labelledby="computer-providers-title">
@@ -76,7 +74,7 @@ function ComputerUseLanding() {
       </section>
       <section className="computer-section" aria-labelledby="computer-nocode-title">
         <div className="computer-section-inner">
-          <div className="computer-section-copy"><h2 id="computer-nocode-title">Build without the setup.</h2><p>Prefer not to run the infrastructure yourself? Build and manage workflows visually with the no-code web app.</p><a className="computer-workspace-link" href={local ? 'http://127.0.0.1:3000/' : 'https://platform.cua.openlybuilt.com'}>Explore the web app <span aria-hidden="true">↗</span></a></div>
+          <div className="computer-section-copy"><h2 id="computer-nocode-title">Build visually, without code.</h2><p>Download and run the frontend to create and manage workflows through a visual, no-code interface.</p></div>
           <div className="computer-workflow-example" aria-label="Browser workflow demo">
             <span className="computer-builder-end">Start</span>
             <ol className="computer-workflow-steps">{seleniumSteps.map(step => <li key={step.title}><span className="computer-builder-line" aria-hidden="true"/><div className="computer-builder-node"><i aria-hidden="true">{step.icon}</i><span><b>{step.title}</b><small>{step.detail}</small></span></div></li>)}</ol>

@@ -65,19 +65,12 @@ function ComputerUseLanding() {
       <section className="computer-section" aria-labelledby="computer-schedule-title">
         <div className="computer-section-inner computer-section-reverse">
           <div className="computer-section-copy"><h2 id="computer-schedule-title">Run on your schedule.</h2><p>Choose a one-time run or set a recurring schedule for your workflow.</p></div>
-          <div className="computer-schedule-example" role="img" aria-label="Preview of the workflow scheduling dialog, showing a recurring weekday schedule at 9 a.m.">
-            <div className="schedule-example-heading"><div><h3>Schedule workflow</h3><p>Runs use the latest saved workflow.</p></div><span aria-hidden="true">×</span></div>
-            <div className="schedule-example-form" aria-hidden="true">
-              <span>When should it run?</span>
-              <div className="schedule-example-choices"><div><strong>Once</strong><small>At a specific time</small></div><div className="selected"><strong>Recurring</strong><small>Repeat on days or at an interval</small></div></div>
-              <div className="schedule-example-field"><span>Repeat</span><div className="schedule-example-select">On selected days <span>⌄</span></div></div>
-              <div className="schedule-example-field"><span>Days</span><div className="schedule-example-days">{['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].map((day, index) => <span className={index < 5 ? 'selected' : ''} key={day}><i/>{day}</span>)}</div></div>
-              <div className="schedule-example-field"><span>Time</span><div className="schedule-example-input">09:00 AM</div><small>Time zone: America/Denver. Change it in Settings.</small></div>
-              <div className="schedule-example-record"><i/> Record scheduled runs</div>
-              <div className="schedule-example-create"><span>Create schedule</span></div>
-            </div>
-            <div className="schedule-example-list" aria-hidden="true"><h4>Scheduled runs</h4><p>No schedules yet.</p></div>
-            <p className="schedule-example-caption">Scheduling UI preview</p>
+          <div className="computer-schedule-example" role="img" aria-label="Schedule preview: a workflow runs on weekdays at 9 a.m.">
+            <div className="schedule-example-heading">Schedule workflow</div>
+            <div className="schedule-example-choices" aria-hidden="true"><span>Once</span><span className="selected">Recurring</span></div>
+            <div className="schedule-example-row" aria-hidden="true"><span>Repeat</span><span>Weekdays</span></div>
+            <div className="schedule-example-days" aria-hidden="true">{['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => <span key={day}>{day}</span>)}</div>
+            <div className="schedule-example-row schedule-example-time" aria-hidden="true"><span>Time</span><span>09:00 AM</span></div>
           </div>
         </div>
       </section>

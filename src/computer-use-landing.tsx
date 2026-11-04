@@ -64,8 +64,14 @@ function ComputerUseLanding() {
       </section>
       <section className="computer-section" aria-labelledby="computer-schedule-title">
         <div className="computer-section-inner computer-section-reverse">
-          <div className="computer-section-copy"><h2 id="computer-schedule-title">Run on your schedule.</h2><p>Start workflows when you need them, or connect an external scheduler to trigger runs at regular intervals.</p></div>
-          <div className="computer-schedule-visual" aria-hidden="true"><div className="computer-schedule-time">09:00 <span>Every day</span></div><div className="computer-schedule-line"/><div className="computer-schedule-task"><span className="computer-schedule-dot"/>Run workflow</div></div>
+          <div className="computer-section-copy"><h2 id="computer-schedule-title">Run on your schedule.</h2><p>Choose a one-time run or set a recurring schedule for your workflow.</p></div>
+          <div className="computer-schedule-example" role="img" aria-label="Schedule preview: a workflow runs on weekdays at 9 a.m.">
+            <div className="schedule-example-heading">Schedule workflow</div>
+            <div className="schedule-example-choices" aria-hidden="true"><span>Once</span><span className="selected">Recurring</span></div>
+            <div className="schedule-example-row" aria-hidden="true"><span>Repeat</span><span>Weekdays</span></div>
+            <div className="schedule-example-days" aria-hidden="true">{['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => <span key={day}>{day}</span>)}</div>
+            <div className="schedule-example-row schedule-example-time" aria-hidden="true"><span>Time</span><span>09:00 AM</span></div>
+          </div>
         </div>
       </section>
       <section className="computer-section" aria-labelledby="computer-nocode-title">

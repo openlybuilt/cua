@@ -64,8 +64,21 @@ function ComputerUseLanding() {
       </section>
       <section className="computer-section" aria-labelledby="computer-schedule-title">
         <div className="computer-section-inner computer-section-reverse">
-          <div className="computer-section-copy"><h2 id="computer-schedule-title">Run on your schedule.</h2><p>Start workflows when you need them, or connect an external scheduler to trigger runs at regular intervals.</p></div>
-          <div className="computer-schedule-visual" aria-hidden="true"><div className="computer-schedule-time">09:00 <span>Every day</span></div><div className="computer-schedule-line"/><div className="computer-schedule-task"><span className="computer-schedule-dot"/>Run workflow</div></div>
+          <div className="computer-section-copy"><h2 id="computer-schedule-title">Run on your schedule.</h2><p>Choose a one-time run or set a recurring schedule for your workflow.</p></div>
+          <div className="computer-schedule-example" role="img" aria-label="Preview of the workflow scheduling dialog, showing a recurring weekday schedule at 9 a.m.">
+            <div className="schedule-example-heading"><div><h3>Schedule workflow</h3><p>Runs use the latest saved workflow.</p></div><span aria-hidden="true">×</span></div>
+            <div className="schedule-example-form" aria-hidden="true">
+              <span>When should it run?</span>
+              <div className="schedule-example-choices"><div><strong>Once</strong><small>At a specific time</small></div><div className="selected"><strong>Recurring</strong><small>Repeat on days or at an interval</small></div></div>
+              <div className="schedule-example-field"><span>Repeat</span><div className="schedule-example-select">On selected days <span>⌄</span></div></div>
+              <div className="schedule-example-field"><span>Days</span><div className="schedule-example-days">{['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].map((day, index) => <span className={index < 5 ? 'selected' : ''} key={day}><i/>{day}</span>)}</div></div>
+              <div className="schedule-example-field"><span>Time</span><div className="schedule-example-input">09:00 AM</div><small>Time zone: America/Denver. Change it in Settings.</small></div>
+              <div className="schedule-example-record"><i/> Record scheduled runs</div>
+              <div className="schedule-example-create"><span>Create schedule</span></div>
+            </div>
+            <div className="schedule-example-list" aria-hidden="true"><h4>Scheduled runs</h4><p>No schedules yet.</p></div>
+            <p className="schedule-example-caption">Scheduling UI preview</p>
+          </div>
         </div>
       </section>
       <section className="computer-section" aria-labelledby="computer-nocode-title">

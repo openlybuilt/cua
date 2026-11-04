@@ -56,7 +56,7 @@ function ComputerUseLanding() {
     </div></section>
       <section className="computer-section" aria-labelledby="computer-providers-title">
         <div className="computer-section-inner">
-          <div className="computer-section-copy"><h2 id="computer-providers-title">Choose where your agent runs.</h2><p>Currently supports Daytona and OnKernel. The other providers shown are not yet integrated.</p></div>
+          <div className="computer-section-copy"><h2 id="computer-providers-title">Choose where your agent runs.</h2><p>Set up your preferred provider for your agent. Daytona and OnKernel are currently integrated, and support for other providers can be added.</p></div>
           <div className="computer-provider-wheel" data-theme="dark"><ModelWheel scrollable models={providers} label="Providers: Daytona, OnKernel, Blaxel, E2B, Google Cloud, Namespace, and Superserve. Only Daytona and OnKernel are currently integrated."/></div>
         </div>
       </section>

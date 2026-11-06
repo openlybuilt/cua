@@ -39,16 +39,14 @@ function ComputerUseLanding() {
       <div className="design-links">
         <DropdownMenu openOnHover current label="Agents" align="center" triggerClassName="design-agents-trigger computer-agents-current" menuClassName="design-agents-menu" items={[
           { label: 'Computer-use', current: true, onSelect: () => { window.location.href = sitePaths.computerUse; } },
-          { label: 'Research', disabled: true },
         ]}/>
         <DesignMenu triggerClassName="computer-design-trigger" menuClassName="design-main-menu"/>
-        <button type="button" disabled>Energy</button>
       </div>
       <SocialIcons className="design-socials"/>
     </nav></header>
     <main className="computer-main"><section className="design-hero computer-hero" aria-labelledby="computer-use-title">
       <div className="design-hero-copy">
-      <h1 id="computer-use-title">Computer-use for all.</h1>
+      <h1 id="computer-use-title">Automate any computer process.</h1>
       <p>Build workflows that help agents carry out tasks on a computer.<br/>Open source and available for anyone to use.</p>
       <div className="computer-actions">
         <a className="computer-workspace-link" href="https://github.com/openlybuilt/cua" target="_blank" rel="noopener noreferrer"><RiGithubFill size={19} aria-hidden="true"/>GitHub repository <span className="design-sr">(opens in a new tab)</span></a>

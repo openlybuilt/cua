@@ -1,4 +1,4 @@
 import { defineConfig } from 'vite';
 import { fileURLToPath, URL } from 'node:url';
 
-export default defineConfig({ resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } }, server: { host: '127.0.0.1', port: 4177, strictPort: true } });
+export default defineConfig(({ command }) => ({ base: command === 'build' ? '/cua/' : '/', resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } }, server: { host: '127.0.0.1', port: 4177, strictPort: true } }));

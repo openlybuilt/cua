@@ -11,13 +11,13 @@ import './styles/arc-foundation.css';
 import './styles/design-landing.css';
 
 const providers: WheelModel[] = [
-  { name: 'Daytona', src: '/assets/daytona-mark.png' },
-  { name: 'OnKernel', src: '/assets/kernel-mark.svg' },
-  { name: 'Blaxel', src: '/assets/blaxel-mark.png' },
-  { name: 'E2B', src: '/assets/e2b-mark.jpg' },
-  { name: 'Google Cloud', src: '/assets/google-cloud-mark.svg' },
-  { name: 'Namespace', src: '/assets/namespace-mark.png' },
-  { name: 'Superserve', src: '/assets/superserve-mark.png' },
+  { name: 'Daytona', src: `${import.meta.env.BASE_URL}assets/daytona-mark.png` },
+  { name: 'OnKernel', src: `${import.meta.env.BASE_URL}assets/kernel-mark.svg` },
+  { name: 'Blaxel', src: `${import.meta.env.BASE_URL}assets/blaxel-mark.png` },
+  { name: 'E2B', src: `${import.meta.env.BASE_URL}assets/e2b-mark.jpg` },
+  { name: 'Google Cloud', src: `${import.meta.env.BASE_URL}assets/google-cloud-mark.svg` },
+  { name: 'Namespace', src: `${import.meta.env.BASE_URL}assets/namespace-mark.png` },
+  { name: 'Superserve', src: `${import.meta.env.BASE_URL}assets/superserve-mark.png` },
 ];
 
 // The default Selenium workflow in platform-services/backend/src/workflows/default-workflow.ts.
